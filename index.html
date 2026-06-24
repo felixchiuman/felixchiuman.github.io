@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felix Chiuman — Android Engineer</title>
+<meta name="description" content="Felix Chiuman, Android Engineer. Kotlin, Jetpack Compose, clean architecture, and apps shipped to millions.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="assets/Felix.png">
+
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<!-- ===== Background ambience (fixed, behind everything) ===== -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="grid-overlay"></div>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
+  <div class="glow glow-c"></div>
+</div>
+
+<!-- ===== Top navigation ===== -->
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a href="#home" class="logo" aria-label="Felix Chiuman — home">
+      <span class="logo-mark">FC</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link" data-nav="home">Home</a></li>
+      <li><a href="#services" class="nav-link" data-nav="services">Services</a></li>
+      <li><a href="#experience" class="nav-link" data-nav="experience">Experiences</a></li>
+      <li><a href="#work" class="nav-link" data-nav="work">Projects</a></li>
+      <!--<li><a href="#clients" class="nav-link" data-nav="clients">Clients</a></li>-->
+      <li><a href="#stack" class="nav-link" data-nav="stack">Tech Stacks</a></li>
+      <li><a href="#certifications" class="nav-link" data-nav="certifications">Certification</a></li>
+      <li><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+    </ul>
+
+    <a href="#contact" class="btn btn-primary btn-sm nav-cta">Let's Talk</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===== INTRODUCTION ===== -->
+  <section id="home" class="section hero">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <p class="eyebrow reveal"><span class="eyebrow-dot"></span>// Android Engineer</p>
+        <h1 class="hero-title reveal">
+          Hi, I'm <span class="gradient-text">Felix Chiuman</span>
+        </h1>
+        <p class="hero-role reveal">
+          I build Android apps that feel <span id="typedText" class="typed-text"></span><span class="typed-cursor">|</span>
+        </p>
+        <p class="hero-bio reveal">
+          Turning specs into smooth, crash-free Android experiences using Kotlin, Jetpack Compose, and clean architecture that stands up to real-world users.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="assets/Felix Chiuman - CV.pdf" class="btn btn-primary" download target="_blank">Download CV </a>
+          <a href="#work" class="btn btn-ghost">View my work<span class="btn-arrow">→</span></a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <div class="stat-value"><span class="stat-num" data-count="4">0</span><span class="stat-suffix">+</span></div>
+            <span class="stat-label">Years experience</span>
+          </div>
+          <div class="stat">
+            <div class="stat-value"><span class="stat-num" data-count="15">0</span><span class="stat-suffix">+</span></div>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <!-- TODO: Total clients -->
+            <div class="stat-value"><span class="stat-num" data-count="10">0</span></div>
+            <span class="stat-label">Total Clients</span>
+          </div>
+        </div>
+
+        <div class="hero-social reveal">
+          <a href="https://github.com/felixchiuman" class="icon-btn" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.33 1.1 2.9.84.09-.66.34-1.1.62-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.2C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/felix-chiuman/" class="icon-btn" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4.98 3.5a2.5 2.5 0 1 0 .02 5 2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3V9Zm7 0h3.84v1.64h.05c.53-1 1.84-1.96 3.78-1.96C21.94 8.68 22 11.45 22 14.4V21h-4v-6.1c0-1.45-.03-3.32-2.02-3.32-2.03 0-2.34 1.58-2.34 3.22V21h-4V9Z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://play.google.com/store/apps/developer?id=La+Chance" class="icon-btn" target="_blank" aria-label="Play Store">
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><title>google_play_line</title><g id="google_play_line" fill='none' fill-rule='evenodd'><path d='M24 0v24H0V0zM12.593 23.258l-.011.002-.071.035-.02.004-.014-.004-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113-.013.002-.185.093-.01.01-.003.011.018.43.005.012.008.007.201.093c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.004-.011.017-.43-.003-.012-.01-.01z'/><path fill="currentColor" d='M20.25 10.7a1.5 1.5 0 0 1 0 2.599l-15 8.66A1.5 1.5 0 0 1 3 20.66V3.34a1.5 1.5 0 0 1 2.25-1.3zM18.5 12l-3.223-1.861-1.857 1.86 1.857 1.862zM6.644 18.795l6.74-4-1.376-1.379zm5.364-8.211 1.376-1.38-6.74-3.999zM5 6.389V17.61L10.596 12z'/></g></svg>
+          </a>
+          <a href="mailto:chiumanfelix@hotmail.com" class="icon-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1.4 2 7.1 5.4a1 1 0 0 0 1 0L19.6 7H4.4Z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" id="heroVisual">
+        <!-- Primary photo frame — swap the .avatar-placeholder for <img class="avatar-photo" src="assets/your-photo.jpg" alt="Felix Chiuman"> -->
+         
+        <div class="photo-frame">
+            <img class="avatar-photo" src="assets/nobgnew.png" alt="Felix Chiuman"> 
+          <!--<div class="avatar-placeholder" aria-hidden="true"></div>-->
+        </div>
+
+        <span class="float-badge badge-years">
+          <strong>4+</strong>
+          <small>Years<br>Experience</small>
+        </span>
+
+        <span class="float-badge badge-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 21V8.5A2.5 2.5 0 0 1 9 6h6a2.5 2.5 0 0 1 2.5 2.5V21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.5 3.5 11 6M14.5 3.5 13 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.6"/><path d="M10.6 13 11.6 14l1.8-1.9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </div>
+      <div class="tag-row-hero">
+              <span class="tag-hero">Kotlin</span><span class="tag-hero">Compose</span><span class="tag-hero">Room</span>
+      </div>
+
+    </div>
+
+    
+    <a href="#services" class="scroll-cue" aria-label="Scroll to next section">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M12 4v15M6 13l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- ===== WHY HIRE ME ===== -->
+  <section id="services" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">Why work with me</p>
+      <h2 class="section-title reveal">What I bring to your team</h2>
+      <p class="section-sub reveal">Four things I obsess over on every Android project, regardless of the stack around it.</p>
+
+      <div class="grid grid-4 services-grid">
+        <article class="card service-card reveal">
+          <span class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 18V4l11 7-11 7Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 4v16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Native Android, done right</h3>
+          <p>Kotlin and Jetpack Compose builds tuned for cold‑start time, jank‑free scrolling, and battery — not just "it works on my Pixel."</p>
+        </article>
+
+        <article class="card service-card reveal">
+          <span class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="3" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="14" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <h3>Architecture that scales</h3>
+          <p>MVVM/MVP, modularized Gradle, and clear module boundaries so a 3‑person app can grow into a 30‑person codebase without a rewrite.</p>
+        </article>
+
+        <article class="card service-card reveal">
+          <span class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V11M4 11l4-5 4 5 4-7 4 7M4 11h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Play Store launch &amp; growth</h3>
+          <p>Staged rollouts, crash‑rate dashboards, and ASO basics so launch day is calm and the rating climbs instead of cratering.</p>
+        </article>
+
+        <article class="card service-card reveal">
+          <span class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="8" r="2.4" stroke="currentColor" stroke-width="1.4"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5M15 14.2c2.3.2 4 1.9 4 4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Built for the whole team</h3>
+          <p>I write PRs designers can skim, specs PMs can sign off on, and code reviews backend engineers actually enjoy reading.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Career so far</p>
+      <h2 class="section-title reveal">Experience</h2>
+      <p class="section-sub reveal">Four roles, one thread: delivering high-quality, user-focused solutions.</p>
+
+      <div class="timeline">
+        
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Mobile Application Developer</h3>
+              <span class="timeline-date">Apr 2023 — Present</span>
+            </div>
+            <p class="timeline-company">PT. MIMOTEK INDONESIA</p>
+            <ul>
+              <li>Led end-to-end development and maintenance of Android applications for major enterprise clients, including FKS Food, Indomobil, Kino, Nissin Food, Bimaruna Jaya, Agrinesia, Indoguna, Indoboga Utama, Indopangan Sentosa, and Dima Indonesia.</li>
+              <li>Migrated legacy Android codebases from Java to Kotlin, improving readability, development speed, and reducing technical debt.</li>
+              <li>Supervised outsourced developers by enforcing clean architecture and conducting systematic code reviews.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Android Engineer (Freelance)</h3>
+              <span class="timeline-date">Jan 2023 — Mar 2023</span>
+            </div>
+            <p class="timeline-company">PT. MIMOTEK INDONESIA</p>
+            <ul>
+              <li>Developed the Largo Stock Check application to streamline inventory and stock inspection processes.</li>
+              <li>Implemented key operational features, including efficient stock data import/export functionality for client teams.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Android Engineer (Intern)</h3>
+              <span class="timeline-date">Aug 2022 — Dec 2022</span>
+            </div>
+            <p class="timeline-company">PT. VIDIO DOT COM</p>
+            <ul>
+              <li>Optimized the app’s UI/UX components for the 2022 FIFA World Cup event to ensure seamless performance during high-traffic streams.</li>
+              <li>Created reusable Android UI components for the internal design system to reduce redundancy across features.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>IT Support (Freelance)</h3>
+              <span class="timeline-date">Jan 2021 — Present</span>
+            </div>
+            <p class="timeline-company">PT. TRITUNGGAL MULTI KREASI</p>
+            <ul>
+              <li>Diagnose and resolve hardware and software malfunctions to ensure optimal client system performance.</li>
+              <li>Provide continuous technical support and troubleshooting to maintain reliable operational efficiency.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ===== FEATURED WORK NEW ===== -->
+  <section id="work" class="section">
+    <div class="container">
+
+      <div class="work-head reveal">
+        <div class="work-title">
+          <p class="section-eyebrow">Featured work</p>
+          <p class="work-eyebrow">Featured Projects</p>
+        </div>
+        <p class="work-intro">Production Android apps where I worked</p>
+      </div>
+
+      <div class="project-list">
+
+        <article class="project-detail reveal" style="--pc1:#8b5cf6; --pc2:#3b82f6;">
+          <div class="project-visual" aria-hidden="true">
+            <img class="project-img" src="assets/project-largo-wms.png" alt="Largo WMS &amp; Enterprise Solutions">
+          </div>
+
+          <div class="project-main">
+            <span class="project-index">01</span>
+            <h3>Largo WMS &amp; Enterprise Solutions</h3>
+            <p class="project-subtitle">Core Warehouse Management System &amp; Customized Client Apps</p>
+            <p class="project-desc">Designed and built "Largo", a robust core Warehouse Management System (WMS) engine from scratch. Successfully scaled and customized this core platform into tailored B2B enterprise applications for major clients (FKS Food, Indomobil, Kino, etc.), aligning the system with each client's unique logistics, supply chain, and operational workflows.</p>
+          </div>
+
+          <div class="project-worked">
+            <p class="worked-heading">What I worked on</p>
+            <div class="worked-grid">
+              <ul>
+                <li><span class="check-icon">✓</span>Core WMS engine development &amp; B2B customization</li>
+                <li><span class="check-icon">✓</span>Zebra &amp; Honeywell RFID SDK integrations</li>
+                <li><span class="check-icon">✓</span>Barcode scanning (ZXing) &amp; thermal printer support</li>
+                <li><span class="check-icon">✓</span>Legacy Java to Kotlin codebase migration</li>
+              </ul>
+              <ul>
+                <li><span class="check-icon">✓</span>Offline-first local database setup &amp; data encryption</li>
+                <li><span class="check-icon">✓</span>Dependency Injection (Koin) &amp; Clean Architecture</li>
+                <li><span class="check-icon">✓</span>REST API networking, logging, &amp; push notifications</li>
+                <li><span class="check-icon">✓</span>Code reviews and outsourced team collaboration</li>
+              </ul>
+            </div>
+
+            <p class="worked-heading stack-heading">Tech stack</p>
+            <div class="tag-row">
+              <span class="tag tag-lg">Kotlin</span>
+              <span class="tag tag-lg">Java</span>
+              <span class="tag tag-lg">Zebra SDK</span>
+              <span class="tag tag-lg">Honeywell SDK</span>
+              <span class="tag tag-lg">Koin</span>
+              <span class="tag tag-lg">Room</span>
+              <span class="tag tag-lg">Retrofit</span>
+              <span class="tag tag-lg">ZXing</span>
+              <span class="tag tag-lg">Clean Architecture</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-detail reveal" style="--pc1:#22d3ee; --pc2:#3b82f6;">
+          <div class="project-visual" aria-hidden="true">
+            <img class="project-img" src="assets/project-vidio.png" alt="Vidio App">
+          </div>
+
+          <div class="project-main">
+            <span class="project-index">02</span>
+            <h3>Vidio</h3>
+            <p class="project-subtitle">High-Traffic Video Streaming App</p>
+            <p class="project-desc">Contributed to the core Android application during the 2022 FIFA World Cup. Optimized UI/UX layouts and live-match elements to ensure responsiveness, visual alignment, and stability during massive high-traffic streaming events.</p>
+          </div>
+
+          <div class="project-worked">
+            <p class="worked-heading">What I worked on</p>
+            <div class="worked-grid">
+              <ul>
+                <li><span class="check-icon">✓</span>FIFA World Cup UI/UX readiness</li>
+                <li><span class="check-icon">✓</span>Live-match layout optimization</li>
+                <li><span class="check-icon">✓</span>Reusable UI design system components</li>
+                <li><span class="check-icon">✓</span>Bug fixing &amp; issue resolution</li>
+              </ul>
+              <ul>
+                <li><span class="check-icon">✓</span>Responsive component creation</li>
+                <li><span class="check-icon">✓</span>Continuous Integration (CI) setup</li>
+                <li><span class="check-icon">✓</span>Cross-team QA/TE collaboration</li>
+                <li><span class="check-icon">✓</span>Full SDLC participation</li>
+              </ul>
+            </div>
+
+            <p class="worked-heading stack-heading">Tech stack</p>
+            <div class="tag-row">
+              <span class="tag tag-lg">Kotlin</span>
+              <span class="tag tag-lg">Kotlin Multiplatform</span>
+              <span class="tag tag-lg">Jetpack Compose</span>
+              <span class="tag tag-lg">ExoPlayer</span>
+              <span class="tag tag-lg">Coroutines</span>
+              <span class="tag tag-lg">RxJava</span>
+              <span class="tag tag-lg">Dagger</span>
+              <span class="tag tag-lg">Retrofit</span>
+              <span class="tag tag-lg">MVP</span>
+              <span class="tag tag-lg">CI/CD</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-detail reveal" style="--pc1:#a78bfa; --pc2:#ec4899;">
+          <div class="project-visual" aria-hidden="true">
+            <img class="project-img" src="assets/project-largo-stock.png" alt="Largo Stock Check">
+          </div>
+
+          <div class="project-main">
+            <span class="project-index">03</span>
+            <h3>Largo Stock Check</h3>
+            <p class="project-subtitle">Inventory Inspection Application</p>
+            <p class="project-desc">A dedicated application focused specifically on streamlining inventory and stock inspection processes. Engineered to handle large datasets efficiently with robust local data persistence and CSV manipulation capabilities.</p>
+          </div>
+
+          <div class="project-worked">
+            <p class="worked-heading">What I worked on</p>
+            <div class="worked-grid">
+              <ul>
+                <li><span class="check-icon">✓</span>Stock data import/export parsing</li>
+                <li><span class="check-icon">✓</span>CSV file handling (OpenCSV)</li>
+                <li><span class="check-icon">✓</span>Inventory tracking modules</li>
+                <li><span class="check-icon">✓</span>Crash-free performance tuning</li>
+              </ul>
+              <ul>
+                <li><span class="check-icon">✓</span>UI/UX implementation</li>
+                <li><span class="check-icon">✓</span>Local data persistence (Room)</li>
+                <li><span class="check-icon">✓</span>Workflow streamlining</li>
+                <li><span class="check-icon">✓</span>Asynchronous data operations</li>
+              </ul>
+            </div>
+
+            <p class="worked-heading stack-heading">Tech stack</p>
+            <div class="tag-row">
+              <span class="tag tag-lg">Kotlin</span>
+              <span class="tag tag-lg">Koin</span>
+              <span class="tag tag-lg">Coroutines</span>
+              <span class="tag tag-lg">Room</span>
+              <span class="tag tag-lg">CSV Parsing</span>
+              <span class="tag tag-lg">Retrofit</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLIENTS ===== -->
+  <section id="clients" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Who I've worked with</p>
+      <h2 class="section-title reveal">Clients &amp; teams</h2>
+
+      <div class="clients-row reveal">
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-largo.png" alt="Largo"> LARGO</span>
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-vidio.svg" alt="Vidio"> VIDIO</span>
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-fks.svg" alt="FKS Food"> FKS FOOD</span>
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-indomobil.svg" alt="Indomobil"> INDOMOBIL</span>
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-kino.svg" alt="Kino"> KINO</span>
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-nissin.svg" alt="Nissin Food"> NISSIN FOOD</span>
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-bimaruna.png" alt="Bimaruna Jaya"> BIMARUNA JAYA</span>
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-agrinesia.png" alt="Agrinesia"> AGRINESIA</span>
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-indoguna.svg" alt="Indoguna"> INDOGUNA</span>
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-indoboga.png" alt="Indoboga Utama"> INDOBOGA UTAMA</span>
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-indopangan.png" alt="Indopangan Sentosa"> INDOPANGAN SENTOSA</span>
+        <span class="client-badge"><img class="avatar-client" src="assets/logo-dima.png" alt="Dima Indonesia"> DIMA INDONESIA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECH STACK ===== -->
+  <section id="stack" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">My toolbox</p>
+      <h2 class="section-title reveal">Tech stack</h2>
+      <p class="section-sub reveal">What I reach for, and roughly how deep that experience runs.</p>
+
+      <div class="grid grid-4 stack-grid">
+
+        <div class="tech-card reveal">
+          <span class="tech-icon" style="--c1:#a78bfa;--c2:#7c3aed">K</span>
+          <h4>Kotlin</h4>
+          <span class="tech-tag">Language</span>
+          <!--<div class="tech-bar"><span style="--p:95%"></span></div>-->
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon" style="--c1:#60a5fa;--c2:#2563eb">{ }</span>
+          <h4>Jetpack Compose</h4>
+          <span class="tech-tag">UI Toolkit</span>
+          <!--<div class="tech-bar"><span style="--p:95%"></span></div>-->
+          
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon" style="--c1:#34d399;--c2:#059669">⇄</span>
+          <h4>Coroutines &amp; Flow</h4>
+          <span class="tech-tag">Async</span>
+          <!--<div class="tech-bar"><span style="--p:95%"></span></div>-->
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon" style="--c1:#f472b6;--c2:#db2777">DB</span>
+          <h4>Room &amp; SQLite</h4>
+          <span class="tech-tag">Storage</span>
+          <!--<div class="tech-bar"><span style="--p:95%"></span></div>-->
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon" style="--c1:#22d3ee;--c2:#0891b2">⇉</span>
+          <h4>Retrofit &amp; OkHttp</h4>
+          <span class="tech-tag">Networking</span>
+          <!--<div class="tech-bar"><span style="--p:95%"></span></div>-->
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon" style="--c1:#fbbf24;--c2:#d97706">▲</span>
+          <h4>Firebase</h4>
+          <span class="tech-tag">Backend</span>
+          <!--<div class="tech-bar"><span style="--p:95%"></span></div>-->
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon" style="--c1:#a78bfa;--c2:#6d28d9">Hi</span>
+          <h4>Hilt &amp; DI</h4>
+          <span class="tech-tag">Architecture</span>
+          <!--<div class="tech-bar"><span style="--p:95%"></span></div>-->
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon" style="--c1:#60a5fa;--c2:#1d4ed8">git</span>
+          <h4>Git &amp; CI/CD</h4>
+          <span class="tech-tag">Tooling</span>
+          <!--<div class="tech-bar"><span style="--p:95%"></span></div>-->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Background</p>
+      <h2 class="section-title reveal">Education</h2>
+
+      <div class="edu-card-container">
+        
+        <div class="edu-card reveal">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 2 8l10 5 8-4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="timeline-head">
+              <h3>Bachelor of Computer Science</h3>
+              <span class="timeline-date">Sep 2019 — Feb 2023</span>
+            </div>
+            <p class="timeline-company">Esa Unggul University</p>
+            <p>Graduated with a GPA of 3.83.</p>
+          </div>
+        </div>  
+        <br>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">Keeping current</p>
+      <h2 class="section-title reveal">Certifications</h2>
+
+      <div class="grid grid-4 cert-grid">
+        
+        <a href="https://drive.google.com/file/d/13PBm8kTKsS-pS3JjuZYcECxzLBvwqtIl/view" class="cert-card reveal" target="_blank">
+          <span class="cert-ribbon">✓</span>
+          <h4>Mastering AI Bootcamp</h4>
+          <p>Skill Academy By Ruang Guru</p>
+        </a>
+        
+        <a href="https://www.dicoding.com/certificates/JLX1W8YDJP72" class="cert-card reveal" target="_blank">
+          <span class="cert-ribbon">✓</span>
+          <h4>Data Analysis with Python</h4>
+          <p>Dicoding</p>
+        </a>
+
+        <a href="https://www.dicoding.com/certificates/JMZV14Y93XN9" class="cert-card reveal" target="_blank">
+          <span class="cert-ribbon">✓</span>
+          <h4>Data Science Basics</h4>
+          <p>Dicoding</p>
+        </a>
+
+        <a href="https://www.dicoding.com/certificates/4EXG4OELDPRL" class="cert-card reveal" target="_blank">
+          <span class="cert-ribbon">✓</span>
+          <h4>Structured Query Language (SQL) Basics</h4>
+          <p>Dicoding</p>
+        </a>
+        
+        <a href="https://drive.google.com/file/d/1g4wDH_P6BcNwoefG6d912FI_iEDad6w0/view" class="cert-card reveal" target="_blank">
+          <span class="cert-ribbon">✓</span>
+          <h4>Android Developer</h4>
+          <p>Binar Academy</p>
+        </a>
+
+        <a href="https://sanbercode.com/sertifikat/generate/a2431da9-f3d6-4045-8b22-29110612e974" class="cert-card reveal" target="_blank">
+          <span class="cert-ribbon">✓</span>
+          <h4>UI/UX Design</h4>
+          <p>SanbarCode</p>
+        </a>
+        
+        <a href="https://drive.google.com/file/d/1TMHZzeTaj_YFbFGiGD9-gJWF0n081_kv/view" class="cert-card reveal" target="_blank">
+          <span class="cert-ribbon">✓</span>
+          <h4>UI/UX Design</h4>
+          <p>KMMI Bina Nusantara University</p>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <p class="section-eyebrow reveal">Let's build something</p>
+      <h2 class="section-title reveal">Get in touch</h2>
+      <p class="section-sub reveal">Have an Android app to build, fix, or rescue? My inbox is open.</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <div class="contacts">
+            <a href="mailto:chiumanfelix@hotmail.com" class="contact-row">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1.4 2 7.1 5.4a1 1 0 0 0 1 0L19.6 7H4.4Z" fill="currentColor"/></svg>
+            </span>
+            chiumanfelix@hotmail.com
+          </a>
+          <a href="tel:+910000000000" class="contact-row">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h3.4l1.4 4.4-2 1.6a13 13 0 0 0 6.2 6.2l1.6-2 4.4 1.4V19a2 2 0 0 1-2.1 2C9.6 20.7 3.3 14.4 3 6.1A2 2 0 0 1 5 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </span>
+            +6285155491717
+          </a>
+          <div class="contact-row contact-row-static">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.1 7-11.4A7 7 0 0 0 5 9.6C5 14.9 12 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.5"/></svg>
+            </span>
+            Jakarta, Indonesia · Open to remote
+          </div>
+          </div>
+          <div class="contact-row contact-row-static">
+            <span class="availability-dot"></span> Available for new projects
+          </div>
+          <div class="hero-social contact-social">
+            <a href="https://github.com/felixchiuman" class="icon-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.33 1.1 2.9.84.09-.66.34-1.1.62-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.2C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/felix-chiuman/" class="icon-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4.98 3.5a2.5 2.5 0 1 0 .02 5 2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3V9Zm7 0h3.84v1.64h.05c.53-1 1.84-1.96 3.78-1.96C21.94 8.68 22 11.45 22 14.4V21h-4v-6.1c0-1.45-.03-3.32-2.02-3.32-2.03 0-2.34 1.58-2.34 3.22V21h-4V9Z" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <span>© <span id="year"></span> Felix Chiuman. Built with HTML, CSS &amp; JS — no frameworks.</span>
+    <a href="#home" class="footer-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
